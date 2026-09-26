@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kopelle I+D Copilot — prototipo académico de apoyo a la viabilidad técnica, riesgos, comunicaciones y evidencia.">
+  <meta name="theme-color" content="#102b3c">
+  <title>Kopelle I+D Copilot</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <aside>
+    <a class="brand" href="#resumen" aria-label="Kopelle I+D Copilot, ir al resumen">
+      KOP<span>elle</span>
+    </a>
+    <div class="subbrand">I+D COPILOT</div>
+
+    <nav aria-label="Navegación principal">
+      <button type="button" data-tab="resumen">Resumen</button>
+      <button type="button" data-tab="impacto">Impacto y ROI</button>
+      <button type="button" data-tab="riesgos">Riesgos y control</button>
+      <button type="button" data-tab="comunicaciones">Comunicaciones</button>
+      <button type="button" data-tab="evidencia">Evidencia y cierre</button>
+    </nav>
+
+    <div class="aside-foot">
+      <span class="pill">MVP académico</span>
+      <p>Prototipo demostrativo. Las métricas declaradas como meta, potencial o simulación no representan resultados productivos.</p>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div>
+        <div class="eyebrow">KOPelle I+D COPILOT · DASHBOARD</div>
+        <h1 id="title">Vista ejecutiva</h1>
+        <p id="subtitle">Una sola fuente de verdad para cada decisión.</p>
+      </div>
+      <div class="header-status" aria-label="Estado del proyecto">
+        <span>Estado</span>
+        <b>Prototipo</b>
+        Datos documentales y sintéticos
+      </div>
+    </header>
+
+    <div class="notice" role="note">
+      <b>Importante</b>
+      <span>Este sitio es una demostración académica. No sustituye la validación técnica de I+D, Calidad, Producción ni la aprobación humana.</span>
+    </div>
+
+    <section id="content" aria-live="polite"></section>
+
+    <footer>
+      Kopelle I+D Copilot · Prototipo académico · La IA prepara y hace trazable la evidencia; el experto conserva la decisión técnica.
+    </footer>
+  </main>
+
+  <noscript>
+    <p>Este dashboard requiere JavaScript habilitado.</p>
+  </noscript>
+
+  <!-- Cargar primero los datos y después la lógica de la interfaz. -->
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
